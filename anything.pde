@@ -1,7 +1,5 @@
 // Global variables
-float radius = 50.0;
 int X, Y;
-int nX, nY;
 int left,middle,right;
 int delay = 8;
 int alpha = 100;
@@ -19,16 +17,11 @@ void setup(){
   right = width
   X = width / 2;
   Y = height / 2;
-  nX = X;
-  nY = Y;
   background(background_color);
 }
 
 // Main draw loop
-void draw(){
-  
-  radius = radius + sin( frameCount / 4 );
-  
+void draw(){  
   // Track circle to new destination
   X+=(mouseX-X)/delay;
   Y+=(mouseY-Y)/delay;
@@ -43,11 +36,4 @@ void draw(){
   fill(tri2_color,alpha);
   stroke(tri2_color,alpha); 
   triangle(right, height, middle, height, X, Y); 
-}
-
-
-// Set circle's next destination
-void mouseMoved(){
-  nX = mouseX;
-  nY = mouseY;  
 }
