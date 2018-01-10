@@ -9,11 +9,11 @@ void setup() {
 
 void draw() {
 
-  float r = random(360);
+  int r = random(360);
 
-  float x = random(0, width);
+  int x = random(0, width);
 
-  float i = random(0, width);
+  int i = random(0, width);
   
   stroke(r,180,360, 100);
     
