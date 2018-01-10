@@ -29,14 +29,8 @@ void setup(){
 
 // Main draw loop
 void draw(){
-  if (random(100) < 2){
-    startX.add(random(width));
-    startY.add(random(height));
-    startTime.add(time);
-  }
-  
   time += 1
-  counter += 1  
+  counter += 1
  
   background(background_color);
 
@@ -44,4 +38,11 @@ void draw(){
     int dist = (time-startTime.get(i))*increase
     ellipse(startX.get(i),startY.get(i),dist,dist);
   }
+}
+
+void mouseClicked(){
+  startX.add(mouseX);
+  startY.add(mouseY);
+  startTime.add(time);
+
 }
