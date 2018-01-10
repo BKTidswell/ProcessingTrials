@@ -15,8 +15,7 @@ h1 {
     padding: 100px 0;
     font-family:Palatino, URW Palladio L, serif;
     text-align: center;
-    color: #A039C5;
-    z-index: 1000;
+    color: #000000;
 }
 
 #links {
@@ -25,9 +24,8 @@ h1 {
     width: 50%;
     font-family: Palatino, URW Palladio L, serif;
     text-align: center;
-    z-index: 1000;
 }
 
 a {
-    color: #A039C5;
+    color: #000000;
 }
