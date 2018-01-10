@@ -7,12 +7,6 @@ void setup() {
   loop();
 }
 
-
-
-float x = 0;
-
-
-
 void draw() {
   float r = random(100);
 
