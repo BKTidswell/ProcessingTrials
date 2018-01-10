@@ -5,4 +5,27 @@ canvas {
 	top: 0px;
 	width: 100%;
 	height: 100%;
-	}
+	z-index: -1;
+}
+
+h1 {
+	margin: auto;
+	font-size: 300%;
+    width: 70%;
+    padding: 100px 0;
+    font-family:Palatino, URW Palladio L, serif;
+    text-align: center;
+    color: #A039C5;
+}
+
+#links {
+	margin: auto;
+	font-size: 200%;
+    width: 50%;
+    font-family: Palatino, URW Palladio L, serif;
+    text-align: center;
+}
+
+a {
+    color: #A039C5;
+}
