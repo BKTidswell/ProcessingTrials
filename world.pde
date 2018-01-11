@@ -1,5 +1,5 @@
 int sx, sy; 
-float density = 0.5; 
+float density = 0.1; 
 int[][][] world;
 
 void setup(){
@@ -47,7 +47,7 @@ void draw(){
       int count = neighbors(x, y); 
       if (count == 3 && world[x][y][0] == 0){ 
         world[x][y][1] = 1;
-        world[x][y][2] = parent_color(x,y)/3;
+        world[x][y][2] = (parent_color(x,y)/3)%360;
       } 
       if ((count < 2 || count > 3) && world[x][y][0] == 1) 
       { 
