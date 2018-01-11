@@ -1,7 +1,6 @@
 
-
 void setup() {
-  size( 1050, 550 );
+  size(screen.width, screen.height);
   background(#FFFFFF)
   colorMode(HSB, 360);
   loop();

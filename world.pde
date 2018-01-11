@@ -1,13 +1,12 @@
 int sx, sy; 
-float density = 0.25; 
+float density = 0.5; 
 int[][][] world;
 
-void setup(){ 
-
-  size(500, 250);
+void setup(){
+  size(screen.width/3, screen.height/3);
   frameRate(12);
-  sx = width;
-  sy = height;
+  sx = (int)width;
+  sy = (int)height;
   world = new int[sx][sy][3]; 
   colorMode(HSB, 360); 
 

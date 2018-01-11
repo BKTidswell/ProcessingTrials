@@ -10,7 +10,7 @@ tri2_color = #FFD32B;
 
 // Setup the Processing Canvas
 void setup(){
-  size( 1050, 550 );
+  size(screen.width, screen.height);
   strokeWeight( 1 );
   frameRate( 15 );
   left = 0

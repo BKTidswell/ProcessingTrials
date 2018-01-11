@@ -13,7 +13,7 @@ background_color = #0971DD;
 
 // Setup the Processing Canvas
 void setup(){
-  size( 1050, 550 );
+  size(screen.width, screen.height);
   strokeWeight(1);
   stroke(#02C7D9);
   frameRate( 15 );

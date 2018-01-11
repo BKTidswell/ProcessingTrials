@@ -5,11 +5,11 @@ boolean onString = true;
 int radius = 10;
 int rollSpeed = 0.025;
 int speed = 0;
-int gravity = 1;
+int gravity = 0.5;
 int oldY;
 
 void setup(){ 
-  size(1000, 700);
+  size(screen.width, screen.height);
   frameRate(15);
   background(#000000);
   midX = width/2;
@@ -99,6 +99,6 @@ void mouseReleased(){
   oscillate = true;
   if(onString){
     ballY = halfHeight - abs(halfHeight-midY)*0.9;
-    speed = (midY-halfHeight)/4;
+    speed = (midY-halfHeight)/6;
   }
 }
