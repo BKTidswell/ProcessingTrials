@@ -41,8 +41,12 @@ void draw(){
 }
 
 void mouseClicked(){
-  startX.add(mouseX);
-  startY.add(mouseY);
+  startX.add(mX);
+  startY.add(mY);
   startTime.add(time);
+}
 
+void mouseMoved(){
+  mX = mouseX;
+  mY = mouseY;
 }

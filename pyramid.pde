@@ -1,7 +1,8 @@
 // Global variables
 int X, Y;
+int mX,mY;
 int left,middle,right;
-int delay = 8;
+int delay = 2;
 int alpha = 100;
 background_color = #3E9EB4;
 tri1_color = #CE2387;
@@ -23,8 +24,8 @@ void setup(){
 // Main draw loop
 void draw(){  
   // Track circle to new destination
-  X+=(mouseX-X)/delay;
-  Y+=(mouseY-Y)/delay;
+  X+=(mX-X)/delay;
+  Y+=(mY-Y)/delay;
   
   // Fill canvas blue
   //background(background_color);
@@ -36,4 +37,9 @@ void draw(){
   fill(tri2_color,alpha);
   stroke(tri2_color,alpha); 
   triangle(right, height, middle, height, X, Y); 
+}
+
+void mouseMoved(){
+	mX = mouseX;
+	mY = mouseY;
 }
